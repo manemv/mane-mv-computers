@@ -1,0 +1,48 @@
+/* Create new file: src/components/CourseCard.css */
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.course-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.course-card-title {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 0.75rem;
+}
+
+.course-card-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.course-card-link {
+  text-decoration: none;
+  color: #17a2b8;
+  font-weight: bold;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.course-card-link:hover {
+  color: #138496;
+}

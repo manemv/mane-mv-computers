@@ -1,0 +1,88 @@
+/* Create new file: src/pages/CourseDetailPage.css */
+.course-detail-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.course-header {
+  background: #17a2b8;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.course-header h1 {
+  font-size: 2.5rem;
+  border: none;
+  color: white;
+}
+
+.course-curriculum .module-section {
+  margin-bottom: 2rem;
+}
+
+.module-section h2 {
+  font-size: 2rem;
+  color: #333;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.topic-section {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-section h3 {
+  font-size: 1.5rem;
+  color: #17a2b8;
+  margin-bottom: 1rem;
+}
+
+.subtopic-section {
+  margin-left: 2rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e9ecef;
+  margin-bottom: 1rem;
+}
+
+.subtopic-section h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.content-item {
+  margin-bottom: 1rem;
+}
+
+.content-item p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.content-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin-top: 1rem;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

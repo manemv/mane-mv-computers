@@ -15,3 +15,13 @@ export const fetchPages = () => {
 export const fetchPageBySlug = (slug) => {
   return apiClient.get(`/pages/${slug}/`);
 };
+// src/services/api.js
+// ... (keep existing code)
+
+export const fetchCourses = () => {
+  return apiClient.get('/courses/');
+};
+
+export const fetchCourseBySlug = (slug) => {
+  return apiClient.get(`/courses/${slug}/`);
+};
