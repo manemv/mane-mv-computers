@@ -1,4 +1,6 @@
-/* Create new file: src/pages/CourseDetailPage.css */
+/* This file is not in the context, so I am providing the full updated code.
+   You should replace the content of your existing src/pages/CourseDetailPage.css with this. */
+
 .course-detail-container {
   max-width: 900px;
   margin: 2rem auto;
@@ -17,10 +19,17 @@
   font-size: 2.5rem;
   border: none;
   color: white;
+  margin: 0;
+}
+
+.course-header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
 }
 
 .course-curriculum .module-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .module-section h2 {
@@ -28,40 +37,37 @@
   color: #333;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #eee;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .topic-section {
   margin-left: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .topic-section h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #17a2b8;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.subtopic-section {
-  margin-left: 2rem;
-  padding-left: 1rem;
-  border-left: 2px solid #e9ecef;
-  margin-bottom: 1rem;
-}
-
-.subtopic-section h4 {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+.content-items-container {
+  padding-left: 1.5rem;
+  border-left: 3px solid #e9ecef;
 }
 
 .content-item {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .content-item p {
   line-height: 1.7;
   color: #444;
+  font-size: 1.1rem;
 }
 
 .content-item img {
@@ -77,6 +83,7 @@
   position: relative;
   height: 0;
   margin-top: 1rem;
+  border-radius: 8px;
 }
 
 .video-responsive iframe {

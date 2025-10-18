@@ -4,6 +4,13 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = ({ pages }) => {
+  // Sort pages to show 'Courses' first after 'Home', then alphabetically
+  const sortedPages = [...pages].sort((a, b) => {
+    if (a.slug === 'courses') return -1; // 'courses' comes first
+    if (b.slug === 'courses') return 1;
+    return 0;
+  });
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -16,7 +23,7 @@ const Navbar = ({ pages }) => {
               Home
             </NavLink>
           </li>
-          {pages.map((page) => (
+          {sortedPages.map((page) => (
             <li className="nav-item" key={page.id}>
               <NavLink to={`/${page.slug}`} className="nav-links">
                 {page.title}
