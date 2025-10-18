@@ -1,0 +1,51 @@
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import './HeroCarousel.css';
+
+// Import your images
+import course1 from '../assets/course-1.png';
+import course2 from '../assets/course-2.png';
+import course3 from '../assets/course-3.png';
+
+const courseData = [
+  {
+    image: course1,
+    title: 'Full-Stack Web Development',
+    description: 'Master front-end and back-end technologies.',
+  },
+  {
+    image: course2,
+    title: 'Data Science & Machine Learning',
+    description: 'Unlock insights from data with Python and R.',
+  },
+  {
+    image: course3,
+    title: 'Cloud Computing with AWS',
+    description: 'Become an expert in cloud infrastructure.',
+  },
+];
+
+const HeroCarousel = () => {
+  return (
+    <Carousel
+      showThumbs={false}
+      autoPlay
+      infiniteLoop
+      showStatus={false}
+      className="hero-carousel"
+    >
+      {courseData.map((course, index) => (
+        <div key={index} className="carousel-slide">
+          <img src={course.image} alt={course.title} />
+          <div className="legend">
+            <h2>{course.title}</h2>
+            <p>{course.description}</p>
+          </div>
+        </div>
+      ))}
+    </Carousel>
+  );
+};
+
+export default HeroCarousel;

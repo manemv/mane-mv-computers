@@ -1,0 +1,21 @@
+import React from 'react';
+import HeroCarousel from '../components/HeroCarousel';
+import './Home.css';
+
+const Home = () => {
+  return (
+    <div className="home-page">
+      <HeroCarousel />
+      <section className="about-section">
+        <div className="about-container">
+          <h1 className="about-title">Welcome to MaNe MV Computers</h1>
+          <p className="about-description">
+            Your modern destination for mastering the world of technology. We provide cutting-edge courses in web development, data science, cloud computing, and more. Our mission is to empower learners with the practical skills and knowledge needed to excel in the tech industry. Join our community and start your journey to success today.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

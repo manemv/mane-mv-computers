@@ -1,0 +1,16 @@
+import React from 'react';
+
+const pageStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: 'calc(100vh - 70px)',
+  fontSize: '2rem',
+  color: '#888'
+};
+
+const AboutUs = () => {
+  return <div style={pageStyle}>About Us - Coming Soon!</div>;
+};
+
+export default AboutUs;

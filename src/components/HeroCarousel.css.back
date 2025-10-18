@@ -1,0 +1,49 @@
+.hero-carousel .carousel-slide {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Customizing the legend to be more modern */
+.hero-carousel .legend {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  color: #fff;
+  padding: 40px 20px 20px;
+  text-align: left;
+  opacity: 1;
+  transition: opacity 0.35s ease-in-out;
+  width: 100%;
+}
+
+.hero-carousel .legend h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero-carousel .legend p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Style for carousel dots */
+.hero-carousel .control-dots .dot {
+  background: #fff;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.hero-carousel .control-dots .dot.selected {
+  background: #0d6efd;
+  opacity: 1;
+}
